@@ -12,14 +12,13 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'haml', '~> 4.0.6'
 gem 'searchkick', '~> 0.8.7'
+gem 'pg'
 
 group :development do
-  gem 'sqlite3'
   gem 'spring'
   gem 'byebug', '~> 4.0.5'
 end
 
 group :production do
-  gem 'pg'
   gem 'rails_12factor'
 end

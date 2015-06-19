@@ -1,7 +1,9 @@
 Testing searchkick and draftsman on Heroku
 
-https://still-ridge-9721.herokuapp.com/
+https://peaceful-earth-5976.herokuapp.com/
 
-The following is failing on Heroku:
+Heroku and ElasticSearch
 
+heroku addons:add searchbox:starter
+heroku config:add ELASTICSEARCH_URL=`heroku config:get SEARCHBOX_URL`
 heroku run rake searchkick:reindex CLASS=Video
