@@ -1,4 +1,12 @@
 %h1 Videos
+=form_tag videos_path, class: "form-inline", method: :get do 
+  .form-group
+    =text_field_tag :query, params[:query], class: 'form-control'
+
+  = submit_tag "search", class: 'btn btn-primary'
+  -if params[:query].present?
+    =link_to "clear", videos_path
+
 %ul
--@videos.each do |video|
-  %li= link_to video.title, video.url
+  -@videos.each do |video|
+    %li= link_to video.title, video.url

@@ -2,7 +2,11 @@ class VideosController < ApplicationController
 
 
   def index
-    @videos = Video.all
+    if params[:query].present?
+      @videos = Video.search(params[:query], page: params[:page])
+    else
+      @videos = Video.all
+    end
   end
 
   def show
