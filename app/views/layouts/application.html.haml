@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %meta{'charset' => 'utf-8'}/
+    = javascript_include_tag 'application'
+    = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.9.3/typeahead.min.js"
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all'
+
+= yield
+
