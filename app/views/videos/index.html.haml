@@ -1,1 +1,4 @@
 %h1 Videos
+%ul
+-@videos.each do |video|
+  %li= link_to video.title, video.url

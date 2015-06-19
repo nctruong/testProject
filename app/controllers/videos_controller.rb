@@ -2,6 +2,7 @@ class VideosController < ApplicationController
 
 
   def index
+    @videos = Video.all
   end
 
   def show
@@ -18,5 +19,5 @@ class VideosController < ApplicationController
 
   def destroy
   end
-  
+
 end
