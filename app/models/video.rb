@@ -1,3 +1,3 @@
 class Video < ActiveRecord::Base
-  searchkick
+  searchkick autocomplete: ['title']
 end

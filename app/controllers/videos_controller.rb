@@ -24,4 +24,8 @@ class VideosController < ApplicationController
   def destroy
   end
 
+  def autocomplete
+    render json: Video.search(params[:query], autocomplete: true, limit: 10).map(&:title)
+  end
+
 end
