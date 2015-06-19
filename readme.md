@@ -1,0 +1,1 @@
+Testing searchkick and draftsman on Heroku
