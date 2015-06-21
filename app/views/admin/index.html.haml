@@ -1,0 +1,10 @@
+%h1 Videos
+%ul
+  -@videos.each do |video|
+    %li= link_to video.title, video.url
+
+
+%h1 Drafts
+%ul
+  -@draftVideos.each do |draftVideo|
+    %li= link_to draftVideo.title, draftVideo.url
