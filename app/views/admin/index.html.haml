@@ -6,5 +6,5 @@
 
 %h1 Drafts
 %ul
-  -@draftVideos.each do |draftVideo|
-    %li= link_to draftVideo.title, draftVideo.url
+  -@drafts.each do |draft|
+    %li= link_to draft.title, draft.url

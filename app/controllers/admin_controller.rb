@@ -3,6 +3,6 @@ class AdminController < ApplicationController
   def index
 
     @videos = Video.all
-    @draftVideos = DraftVideo.all
+    @drafts = Draft.all
   end
 end

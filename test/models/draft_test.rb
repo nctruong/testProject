@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class DraftVideoTest < ActiveSupport::TestCase
+class DraftTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

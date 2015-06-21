@@ -1,6 +1,6 @@
-class CreateDraftVideos < ActiveRecord::Migration
+class CreateDrafts < ActiveRecord::Migration
   def change
-    create_table :draft_videos do |t|
+    create_table :drafts do |t|
       t.string :title
       t.string :url
 
