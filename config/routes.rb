@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :videos
   resources :videos do
     collection do
       post :import

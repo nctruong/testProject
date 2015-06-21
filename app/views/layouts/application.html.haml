@@ -6,8 +6,6 @@
     = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.9.3/typeahead.min.js"
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all'
-  %body
-    %p.notice%notice
-    %p.alert"%lert
-    = yield
+
+= yield
 
