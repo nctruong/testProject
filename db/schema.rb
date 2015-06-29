@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150621113200) do
+ActiveRecord::Schema.define(version: 20150629203401) do
 
   create_table "drafts", force: true do |t|
     t.string   "title"
@@ -25,6 +25,10 @@ ActiveRecord::Schema.define(version: 20150621113200) do
     t.string   "url"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "uid"
+    t.text     "description"
+    t.integer  "views"
+    t.integer  "likes"
   end
 
 end
