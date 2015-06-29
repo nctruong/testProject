@@ -11,3 +11,5 @@
 %ul
   -@videos.each do |video|
     %li= link_to video.title, video
+
+%p= link_to 'Add New Video', new_video_path
