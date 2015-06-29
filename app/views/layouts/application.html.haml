@@ -6,14 +6,12 @@
     = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.9.3/typeahead.min.js"
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all'
+    = stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'
+    = javascript_include_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'
+
   %body
     %p.alert= notice
     %p.alert= alert
-    - if user_signed_in?
-      %p= current_user.email
-      %p= link_to('Logout', destroy_user_session_path, :method => :delete)
-    - else
-      %p= link_to 'Log in', new_user_session_path
     
     = yield
 
