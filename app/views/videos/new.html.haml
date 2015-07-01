@@ -1,8 +1,11 @@
 .container
   .row
     .col-md-8.col-md-offset-2
-      .panel-heading New video
-      .panel-body
-        = render 'form'
+      %h4 New video
+      %form
+        .form-group
+          %input{:type=>"text", :required => true, :id => "video_url", :placeholder => "YouTube video URL"}
+          
+        %button{:type => "button", :id => "btnCheckVideo", :class => "btn btn-default"} Submit
 
-        / https://www.googleapis.com/youtube/v3/videos?key=AIzaSyBx6PNbsLcrB86i3cErr5EjIRoz6v8-8DI&part=snippet&id=8Td8zLMWU4Y
+       
